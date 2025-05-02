@@ -1,0 +1,18 @@
+[
+	{
+		"name": "Accueil",
+		"url": "/"
+	},
+	{
+		"name": "Mes Documentations",
+		"url": "/posts"
+	},
+	{
+		"name": "Mes Projets",
+		"url": "/projects"
+	},
+	{
+		"name": "À propos de moi",
+		"url": "/about"
+	}
+]
