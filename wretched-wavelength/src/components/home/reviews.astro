@@ -1,0 +1,95 @@
+---
+const reviews = [
+  {
+    name: "Ouazi Mohamed",
+    position: 'Gérant MonAssistantNumerique.com',
+    linkdin: 'ouazi',
+    img: 'assets/images/reviews/ouazi.jpg',
+    content:
+      "Je tiens à recommander chaleureusement Taki-Eddine pour son exceptionnel engagement et sa performance dans le cadre de ses études en BTS SIO option SISR au CCI Campus de Mulhouse.",
+    content2: 
+    "Au cours de sa formation, Taki-Eddine a démontré une excellente maîtrise des concepts théoriques tout en les appliquant efficacement dans des situations pratiques. Ses compétences techniques sont particulièrement remarquables, surtout dans la clarté et la précision de ses configurations réseau, ce qui témoigne de sa rigueur et de son attention aux détails.", 
+    content3:
+    "Bravo Taki-Eddine pour ton travail exemplaire et ta capacité à allier théorie et pratique de manière si efficace !",
+  },
+  {
+    name: "Maximilian Neu",
+    position: "Technicien Support Informatique",
+    linkdin: "maximilian-neu",
+    img: "assets/images/reviews/maximilian.jpg",
+    content:
+      "Je recommande vivement Taki-Eddine pour ses compétences en installation et configuration de systèmes d exploitation Linux, Android et Windows. Il a une connaissance approfondie de la gestion des systèmes d exploitation et des réseaux informatiques.",
+  },
+];
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0 mt-20">
+  <h2 class="text-5xl font-bold leading-tight tracking-tight text-neutral-900 dark:text-neutral-100 mb-6">
+    Recommendations
+  </h2>
+  <p class="text-base text-neutral-600 dark:text-neutral-400 mb-10">
+    Voici quelques témoignages laissés par des personnes avec qui j'ai collaboré :
+  </p>
+  <div class="grid gap-6 md:grid-cols-2 group">
+    {reviews.map((review, index) => (
+      <div
+        class="p-6 border border-neutral-200 dark:border-neutral-700 rounded-2xl bg-neutral-50 dark:bg-neutral-900 shadow-sm transition-transform duration-300 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-105"
+        data-key={index}
+      >
+        <div class="flex items-center mb-4">
+          {review.img && (
+            <img
+              src={review.img}
+              alt={review.name}
+              class="w-10 h-10 rounded-full mr-3"
+            />
+          )}
+          <div>
+            <p class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">
+              {review.name}
+            </p>
+            {review.position && (
+              <p class="text-sm text-neutral-500 dark:text-neutral-400">
+                {review.position}
+              </p>
+            )}
+          </div>
+        </div>
+        <div class="text-neutral-800 dark:text-neutral-100 leading-relaxed space-y-4">
+          <p>“{review.content}”</p>
+          {review.content2 && <p>{review.content2}</p>}
+          {review.content3 && <p>{review.content3}</p>}
+          <div class="client-check flex justify-center mt-5">
+            {review.linkdin && (
+              <a
+                href={`https://www.linkedin.com/in/${review.linkdin}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center text-green-500 group"
+              >
+                <svg
+                  class="w-6 h-6 text-green-500 mr-1 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#22C55E"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-green-500 transition-all duration-300">
+                  Vérifier
+                </span>
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
