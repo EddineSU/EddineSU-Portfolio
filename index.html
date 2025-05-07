@@ -1,13 +1,378 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/jsm-logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EddineSU</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ddine - Portfolio</title>
+        <meta name="description" content="Portfolio de Eddine spécialiste réseau informatiques.">
+        <meta name="keywords" content="spécialiste réseau informatiques, Cybersécurité, BTS SIO">
+        <link rel="icon" href="assets/img/favicon.xcf" type="icone">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--ICONE DE L ONGLET-->
+        <link id="favicon" rel="icon" href="assets/img/favicon.png"/>
+    </head>
+    <body>
+       <header class="fix-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <span id="logo-reverse">E</span>E
+                    </a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#about" class="nav__link">Qui suis-je ?</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Mes Competences</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Mes Projets</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bxs-dock-right'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--===== ACCEUIL =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h2 class="accueil-geometrie">
+                        <span id="logo-reverse">
+                            E
+                        </span>
+                        <br>
+                        E
+                    </h2>
+                    <!-- TEXTE DE L ACCUEIL-->
+                    <h1 class="home__title"> 
+                            BONJOUR
+                        <br><br>
+                            JE SUIS 
+                        <br>
+                        <span class="home__title-blue">
+                            EDDINE
+                        </span>
+                    </h1>
+                    <br>
+                    <h2 class="under-title">
+                        <i class='bx bx-medal' >
+                        </i> 
+                        <span class="future">
+                            Future spécialiste
+                        </span>
+                        <br>
+                        <span id="cybersec-accueil">
+                            Réseaux Informatique 
+                        <span class="future">
+                            &
+                        </span>
+                            Cybersécurité
+                        </span>
+                    </h2>
+                    <!-- BOUTTON DE CONTACT DE L ACCUEIL-->
+                    </h1>
+                    <a href=#contact class="button">
+                        Contactez-moi
+                    </a>
+                    <div class="about__container bd-grid">
+                        <div id="pp__img">
+                            <img id="myimg" src="assets/img/about.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- ICONES DE CONTACT DE L ACCUEIL A COTE DE LA PP-->
+                    <div class="accueil__social">
+                        <a href="https://fr.linkedin.com/" class="accueil__social-linkd" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="mailto:takieddinesaouli@ccicampus.fr" class="accueil__social-school" target="_blank"><i class='bx bxs-school' ></i></a>
+                        <a href="mailto:eddinesu@proton.me" class="accueil__social-mail" target="_blank"><i class='bx bx-envelope' ></i></a>
+                        <a href="tel:0749975195" class="accueil__social-phone" target="_blank"><i class='bx bxs-phone' ></i></a>
+                    </div>
+            </section>
+            <!--===== MA PRESENTATION =====-->
+            <section class="about section " id="about">
+                <h2 class="texte-background-about">
+                        Who 
+                    <br> 
+                        I AM
+                    <br>
+                        WHY ME
+                </h2>
+                <h2 class="titre-about section-title" id="about-title">
+                        Qui suis-je 
+                    <span class="about-interro">
+                         ?
+                    </span>
+                </h2>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    <div class="jsuis">
+                        <h2 class="about__subtitle">
+                            Je suis 
+                            <span class="about__title-style">
+                                Eddine
+                            </span>
+                        </h2>
+                        <p class="about__text">
+                            Étudiant en réseau informatique, j'apprécie la complexité de ce domaine en constante évolution.
+                            Passionné par la résolution de problèmes, j'aime collaborer avec d'autres pour trouver des solutions innovantes.
+                            Explorer les avancées technologiques et contribuer à façonner un avenir connecté et sécurisé. 
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
+            <!--===== MES COMPETENCES=====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title" id="skills_title">
+                    Mes Competences
+                </h2>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <p class="skills__text">
+                            Je travaille actuellement dans une entreprise internationale d'impression de pièces en plastiques en tant que spécialiste Informatique,
+                            où je gère les systèmes informatiques pour garantir la production, la qualité et la traçabilité des produits.
+                            Cette opportunité me permet de combiner ma passion pour l'informatique avec un secteur riche de savoir faire.
+                            <br><br>
+                            Au cours de mes éxpériences, j'ai exploré et acquis des compétences dans les technologies et normes suivantes :
+                        </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-codepen' id="virtualisation-effect"></i>
+                                <i class='bx bx-layer-plus skills__icon'></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Virtualisation                     
+                                    </span>
+                                    <br><br>
+                                    VMware, Esxi & VSPhere
+                                    <br>Veeam Backup
+                                    <br>Proxmox
+                                    <br>KVM & QEMU 
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-sitemap' id="virtualisation-effect"></i>
+                                <i class='bx bxs-server skills__icon'></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Reseaux 
+                                    </span>
+                                    <br><br>Installation & Configuration :
+                                    <br>Routeur CISCO, Switch CISCO & HP , AP NETGEAR, Firewall Fortinet... 
+                                    <br>Protocoles Réseaux Basique : 
+                                    <br>VPN, HTTPS, SNMP, DNS, FTP ...
+                                    <br>Architecture Réseau :
+                                    <br>CiscoPacketTracer
+                                    <br>Diagramme
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__css"></div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-terminal' id="virtualisation-effect"></i>
+                                <i class='bx bxs-terminal skills__icon' ></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Linux OS 
+                                    </span> 
+                                    <br><br>Debian
+                                    <br>CentOS
+                                    <br>ArchLinux
+                                    <br>Alma
+                                    <br>NixOS
+                                    <br>Kali & BlackArch
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-shield-quarter' id="virtualisation-effect"></i>
+                                <i class='bx bxl-windows skills__icon'></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Microsoft 
+                                    </span>
+                                    <br><br>Windows Server 2008, 2012, 2018 & 2022
+                                    <br>PowerShell
+                                    <br>Active Directory, DFS, DHCP
+                                    <br>GPO Windows Server
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux"></div>
+                        </div>
+                    </div>
+                    <div class="skills__droit">              
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-lock-alt skills__icon'></i>
+                                <span class="skills__name">
+                                    <i class='bx bx-key' id="virtualisation-effect"></i>
+                                    <span class="titre-comp-green">
+                                        Cybersecurite 
+                                    </span> 
+                                    <br><br>Méthode EBios RM
+                                    <br>ISO 27001 & 27002
+                                    <br>ANSSI Stratégie
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux">                       
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-data' id="virtualisation-effect"></i>
+                                <i class='bx bxs-data skills__icon'></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Base de Donnee
+                                    </span>  
+                                    <br><br>MySQL
+                                    <br>Microsoft SQL Server
+                                    <br>Microsoft Dynamics NAV
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-show-alt skills__icon'></i>
+                                <span class="skills__name">
+                                    <i class='bx bx-line-chart' id="virtualisation-effect-superv"></i>
+                                    <span class="titre-comp-green">
+                                        Supervision
+                                    </span>
+                                    <br><br>Centreon / Nagios
+                                    <br>Grafana with Prometheus
+                                    <br>LibreNMS with Oxidize
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux">                      
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-dev-to skills__icon'></i>
+                                <span class="skills__name">
+                                    <i class='bx bx-code-alt' id="virtualisation-effect"></i>
+                                    <span class="titre-comp-green">
+                                        Language de Programmation
+                                    </span> 
+                                    <br><br>Python
+                                    <br>C++
+                                    <br>MySQL
+                                    <br>PHP
+                                    <br>Perle
+                                    <br>Batch
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-command skills__icon'></i>
+                                <span class="skills__name">
+                                    <span class="titre-comp-green">
+                                        Contenerisation
+                                    </span>
+                                    <br><br>Docker
+                                    <br>Kubernets
+                                </span>
+                            </div>
+                            <div class="skills__bar skills__ux"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title" id="work-title">
+                    Mes Projets
+                </h2>
+                <div class="work__container bd-grid">
+                    <a href="Centreon.html" class="work__img">
+                        <img src="assets/img/centreon/centreon-work.jpg" alt="">
+                    </a>
+                    <a href="Cyber.html" class="work__img">
+                        <img src="assets/img/cyber/anssi-work.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/VMware-work.png" alt="vmware image">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="Cyber.html" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+    </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">    
+            <h2 class="contact-title">Contactez-moi</h2>
+            <p class="contact-paragraphe">
+                Pour m'envoyer un e-mail, il vous suffit de remplir le champ prévu à cet effet ici-même. 
+                Vous trouverez également ci-dessous mon numéro de téléphone, mon adresse et d'autres informations de contact.
+            </p>    
+            <div class="contact__container bd-grid">
+                <form action="https://api.web3forms.com/submit" method="POST" id="emailForm" class="contact__form">
+                    <input type="hidden" name="access_key" value="eee17605-6a17-42a1-bb6d-5c8c78a648ef">
+                    <input type="text" name="name" placeholder="Nom" class="contact__input">
+                    <input type="email" name="email" placeholder="@dresse Mail" class="contact__input">
+                    <textarea name="msg" placeholder="Laissez-moi un message..." cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="Envoyer" class="contact__button button">
+                </form>
+            </div>
+        </section>
+            <div class="footer__social">
+                <a href="https://fr.linkedin.com/" class="footer__icon" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="mailto:takieddinesaouli@ccicampus.fr" class="footer__icon" target="_blank">
+                    <i class='bx bxs-school' ></i>
+                </a>
+                <a href="mailto:eddinesu@proton.me" class="footer__icon" target="_blank">
+                    <i class='bx bx-envelope' ></i>
+                </a>
+                <a href="tel:0749975195" class="footer__icon" target="_blank">
+                    <i class='bx bxs-phone' ></i>
+                </a>
+            </div>
+            <div class="division-footer">
+            </div>
+            <a href="Mentions.html" class="mentions">Mentions légales</a>
+            <a href="Conditions.html" class="conditions">Conditions générales</a>
+            <p class="footer__title">
+                Eddine
+            </p>
+            <p class="footer__copy">
+                &#169; 2024
+            </p>
+        </footer>
+        <!--===== EFFET DECOUVERTE =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== JAVASCRIPT =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
+>>>>>>> 103aa02 (Ajout de fichiers initiaux)
