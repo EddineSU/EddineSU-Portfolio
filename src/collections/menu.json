@@ -1,18 +1,18 @@
 [
 	{
 		"name": "Accueil",
-		"url": "/"
+		"url": "/EddineSU-Portfolio/"
 	},
 	{
 		"name": "Mes Documentations",
-		"url": "/posts"
+		"url": "/EddineSU-Portfolio/posts"
 	},
 	{
 		"name": "Mes Projets",
-		"url": "/projects"
+		"url": "/EddineSU-Portfolio/projects"
 	},
 	{
 		"name": "À propos de moi",
-		"url": "/about"
+		"url": "/EddineSU-Portfolio/about"
 	}
 ]
