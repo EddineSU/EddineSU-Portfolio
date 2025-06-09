@@ -2,37 +2,37 @@
 	{
 		"name": "Méthode eBios Risk Manager",
 		"description": "Avec mon chef de service, nous avons mis en œuvre la méthode eBios Risk Manager afin de réaliser un inventaire informatique automatisé, permettant d’identifier, d’évaluer et de hiérarchiser les risques liés aux actifs numériques de l’entreprise.",
-		"image": "assets/images/projects/ebios.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/ebios.png",
 		"url": "https://tempmail.best"
 	},
 	{
 		"name": "Centreon",
 		"description": "Installation, configuration et déploiement complet de la solution Centreon en entreprise. Supervision des équipements réseau, serveurs et services critiques. Mise en place de sondes SNMP, de plugins personnalisés, de seuils d’alerte, de graphiques de performance et de notifications automatisées par mail. Intégration avec les systèmes existants pour une surveillance centralisée et efficace de l'infrastructure IT.",
-		"image": "assets/images/projects/centreon.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/centreon.png",
 		"url": "https://www.centreon.com/fr/notre-vision/"
 	},
 	{
 		"name": "Refonte du WLAN",
 		"description": "Chargé du projet de refonte du réseau Wi-Fi en entreprise. Remplacement des anciennes bornes par des bornes Cisco de dernière génération. Configuration du Cisco Wireless Controller, planification du déploiement, tests de couverture, sécurisation des accès (WPA2/WPA3) et optimisation des performances pour assurer une connectivité stable et sécurisée sur l’ensemble du site.",
-		"image": "assets/images/projects/Cisco-wireless-controller.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/Cisco-wireless-controller.png",
 		"url": "https://html.zone"
 	},
 	{
 		"name": "SnipeIT",
 		"description": "À mon initiative, l’entreprise a adopté Snipe-IT pour remplacer le suivi des équipements informatiques auparavant géré sous Excel. Cette solution open source offre une gestion centralisée, sécurisée et plus efficace du parc matériel (PC, écrans, licences, utilisateurs, etc.). Elle améliore la traçabilité, réduit les erreurs humaines, et renforce la sécurité en assurant un meilleur contrôle des actifs IT.",
-		"image": "assets/images/projects/snipeit.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/snipeit.png",
 		"url": "https://sink.cool"
 	},
 	{
-		"name": "Atelier Profesionelle 3",
+		"name": "Atelier Professionnelle 3",
 		"description": "Dans le cadre de mes études, j’ai mis en place un VPN IPsec entre deux sites distants dans un environnement entièrement simulé. Le projet comprenait la configuration des routeurs, la création des tunnels VPN, la mise en œuvre des règles de sécurité, ainsi que des tests de connectivité et de résilience du réseau. Ce travail a permis de comprendre concrètement les mécanismes de sécurisation des communications inter-sites.",
-		"image": "assets/images/projects/ap3.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/ap3.png",
 		"url": "https://github.com/ccbikai/BroadcastChannel"
 	},
 	{
-		"name": "Atelier Profesionelle 4",
+		"name": "Atelier Professionnelle 4",
 		"description": "Responsable de la mise en place d’un VPN OpenVPN en mode Road Warrior dans un contexte pédagogique. Ce projet a permis d’assurer un accès distant sécurisé pour les utilisateurs nomades. J’ai configuré le serveur OpenVPN, généré les certificats avec Easy-RSA, géré les clients, et effectué divers tests de sécurité et de connectivité afin de garantir la fiabilité de la solution",
-		"image": "assets/images/projects/ap4.png",
+		"image": "/EddineSU-Portfolio/assets/images/projects/ap4.png",
 		"url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
 	}
 ]
