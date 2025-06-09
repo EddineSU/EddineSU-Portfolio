@@ -1,0 +1,103 @@
+---
+import experiences from "../collections/experiences.json";
+import formations from "../collections/formations.json";
+import certifications from "../collections/certifications.json";
+import AboutExperience from "../components/about-experience.astro";
+import AboutFormation from "../components/about-formation.astro";
+import AboutCertification from "../components/about-certification.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="About Me">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Qui suis-je ?"
+    />
+    <img src="/assets/images/photo.png" class="relative z-10 w-2/4 my-10 rounded-xl mx-auto" />
+    <PageHeading
+      description="Je m'appelle Eddine, futur spécialiste en Cybersécurité, Réseaux et Systèmes Informatiques. Passionné par les technologies et la sécurité, je suis constamment à la recherche de nouvelles solutions pour résoudre des défis complexes et améliorer les infrastructures informatiques. Avec une formation solide en administration de systèmes Linux, gestion des réseaux Cisco et application des normes de cybersécurité, je m'engage à offrir des solutions robustes, sécurisées et adaptées aux besoins de mes clients."
+    />
+    <br>
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+    📈 Experience Pro
+    </h2>
+    <div class="px-5 py-10">
+      {
+        experiences.map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+                logo={experience.logo}
+              />
+            </div>
+          )
+        })
+      }
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+    <br>
+    🎓 Formations
+    </h2>
+    <div class="px-5 py-10">
+      {
+        formations.map((experience) => {
+        return (
+          <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+            <AboutFormation
+              dates={experience.dates}
+              role={experience.role}
+              company={experience.company}
+              logo={experience.logo}
+            />
+        </div>
+      )
+    })
+  }
+    <br>
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+    🏅 Certifications 
+    </h2>
+    <div class="px-5 py-10">
+      {
+        certifications.map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutCertification
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+                logo={experience.logo}
+        />
+      </div>
+      )
+    })
+  }
+      
+    </div>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Contactez-moi</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Si vous voulez rester à jour avec mon travail, <a
+        href="https://x.com/0xKaibi"
+        target="_blank"
+        class="text-indigo-600">suivez moi sur Linkdin</a
+      >, ou envoyez-moi un <a href="mailto:eddinesu@proton.me" class="text-indigo-600"
+        >email</a
+      > et je vous répondrai. 
+    </p>
+  </section>
+</Layout>
