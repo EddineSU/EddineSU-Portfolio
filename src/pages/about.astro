@@ -71,21 +71,24 @@ import Layout from "../layouts/main.astro";
     <div class="px-5 py-10">
       {
       certifications.map((experience) => {
-        return (
-        <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-          <AboutCertification
-          dates={experience.dates}
-          role={experience.role}
-          company={experience.company}
-          description={experience.description}
-          logo={experience.logo}
-          />
-        </div>
-        )
+      return (
+      <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+        <AboutCertification
+        dates={experience.dates}
+        role={experience.role}
+        company={experience.company}
+        description={experience.description}
+        logo={experience.logo}
+        />
+      </div>
+      )
       })
       }
-      <div class="mt-8">
-      <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4730237" style="border:none;"></iframe>
+      <div class="mt-5">
+      <iframe 
+      src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4730237" 
+      style="border:none; width:100%; height:300px;">
+      </iframe>
       </div>
     </div>
       
